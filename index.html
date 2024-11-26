@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Profile</title>
+</head>
+<body>
+    <h1>My GitHub Languages</h1>
+    <ul id="languages"></ul>
+
+    <script>
+        fetch('languages.json')
+            .then(response => response.json())
+            .then(data => {
+                const ul = document.getElementById('languages');
+                for (const lang in data) {
+                    const li = document.createElement('li');
+                    li.textContent = `${lang}: ${data[lang]} lines`;
+                    ul.appendChild(li);
+                }
+            });
+    </script>
+</body>
+</html>
