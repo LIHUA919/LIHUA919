@@ -1,7 +1,7 @@
 ## About me
 
 
-- 🔭  I'm agent
+- 🔭  I'm a agent
 - 🌱 
 - 👯 
 - 🤔 
